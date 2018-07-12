@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>HTML Partten</title>
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800" rel="stylesheet">
+	<!-- modernizr included -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<style type="text/css">
+		body{
+			background-color: #fff;
+		}  
+		.render-blk{ opacity:0; }
+	</style>
+	<script type="text/javascript">
+		var cssArr = ['css/app.css'];
+		for(var i = 0; i < cssArr.length; i++) {
+			var link = document.createElement('link');
+			link.setAttribute('rel', 'stylesheet');
+			link.setAttribute('type', 'text/css');
+			link.setAttribute('href', cssArr[i]);
+			document.getElementsByTagName('head')[0].appendChild(link);
+		}
+	</script>
+	<noscript>
+		<style type="text/css" media="screen">
+			.render-blk{ opacity: 1; }	
+		</style>
+	</noscript>
+</head>
+	<body>
+		<div class="render-blk">
+			<section id="generic-row">
+				<div class="container">
+					<h1>H1 Heading</h1>
+					<h2>H2 Heading</h2>
+					<h3>H3 Heading</h3>
+					<h4>H4 Heading</h4>
+					<h5>H5 Heading</h5>
+					<h6>H6 Heading</h6>
+					<br />
+					<br />
+				</div>
+				<!-- Hero-banner Start-->
+				<section class="hero-banner">
+					<img src="img/hero-banner.jpg" alt="" />
+					<div class="hero-banner-desc-left">
+						<div class="container">
+							<div class="hero-banner-content">
+								<h1>H1 Heading</h1>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<br />
+
+				<section class="hero-banner">
+					<img src="img/hero-banner.jpg" alt="" />
+					<div class="hero-banner-desc-bottom">
+						<div class="container">
+							<div class="hero-banner-content">
+								<h1>H1 Heading</h1>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<br />
+					
+				<section class="hero-banner">
+					<img src="img/hero-banner.jpg" alt="" />
+					<div class="hero-banner-desc-center">
+						<div class="container">
+							<div class="hero-banner-content">
+								<h1>H1 Heading</h1>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<br />
+
+				<section class="hero-banner">
+					<img src="img/hero-banner.jpg" alt="" />
+					<div class="hero-banner-desc-right">
+						<div class="container">
+							<div class="hero-banner-content">
+								<h1>H1 Heading</h1>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Hero-banner End-->
+
+				<br />
+				<!-- bread-crumb start-->
+				<div class="bread-crumb">
+					<div class="container">
+						<ul class="clearfix">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Sub page</a></li>
+							<li>List</li>
+						</ul>
+					</div>
+				</div>
+				<!-- bread-crumb end-->
+				<br />
+				
+				<div class="container">
+					<!-- image-with-caption start-->
+					<figure class="image-with-caption">
+						<img src="img/hero-banner.jpg" alt="" />
+						<figcaption>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+						</figcaption>
+					</figure>
+					<!-- image-with-caption end-->
+					<br />
+					<!-- image-caption-fullwidth end-->
+					<figure class="image-caption-fullwidth">
+						<div class="image-row">
+							<img src="img/hero-banner.jpg" alt="" />
+						</div>
+						<figcaption>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+						</figcaption>
+					</figure>
+					<!-- image-caption-fullwidth end-->
+					<br />
+					<div class="row">
+						<div class="col-8">
+							<div class="registration-form">
+								<div class="form-row">
+									<label class="floating-item" data-error="Please enter your first name">
+										<input type="text" id="first-name" class="floating-item-input input-item" name="firstname" value="" required />
+										<span class="floating-item-label">First Name</span>
+									</label>
+								</div>
+								<div class="form-row">
+									<label class="floating-item">
+										<input type="text"  id="middle-name" class="floating-item-input input-item non-mandatory" name="middlename" value=""/>
+										<span class="floating-item-label">Middle Name(Optional)</span>
+									</label>
+								</div>
+								<div class="form-row">
+									<label class="floating-item" data-error="Please enter your last name">
+										<input type="text"  id="last-name" class="floating-item-input input-item" name="lastname" value="" required />
+										<span class="floating-item-label">Last Name</span>
+									</label>
+								</div>
+								<div class="form-row">
+									<label class="floating-item" data-error="Please enter a valid email address">
+										<input type="email"  id="email" class="floating-item-input input-item" name="useremail" value="" required />
+										<span class="floating-item-label">Email</span>
+									</label>
+								</div>
+								<div class="form-row">
+									<label class="floating-item" data-error="Please enter your password">
+										<input type="password" id="password" class="floating-item-input input-item" name="userpassword" value="" required/>
+										<span class="floating-item-label">Password</span>
+									</label>
+								</div>
+								<div class="form-row select-row">
+									<select class="select-menu" name="selectmenu" data-placeholder="Select Option" required>
+										<option>Option1</option>
+										<option>Option2</option>
+										<option>Option3</option>
+										<option>Option4</option>
+										<option>Option5</option>
+										<option>Option6</option>
+									</select>
+								</div>
+								<div class="form-row">
+									<label class="floating-item" data-error="Please enter atleast six characters">
+										<textarea class="floating-item-input input-item" rows="3" name="message" value="" id="message" required></textarea>
+										<span class="floating-item-label">Message</span>
+									</label>
+								</div>
+								<div class="form-row checkboxradio">
+									<div class="checkboxradio-row">
+										<input class="checkboxradio-item checkboxradio-invisible" name="checkgroup" id="checkbox1" type="checkbox" />
+										<label class="checkboxradio-label checkbox-label" for="checkbox1">Item1</label>
+									</div>
+									<div class="checkboxradio-row">
+										<input class="checkboxradio-item checkboxradio-invisible" name="checkgroup" id="checkbox2" type="checkbox" />
+										<label class="checkboxradio-label checkbox-label" for="checkbox2">Item2</label>
+									</div>
+									<div class="checkboxradio-row">
+										<input class="checkboxradio-item checkboxradio-invisible" name="checkgroup" id="checkbox3" type="checkbox" />
+										<label class="checkboxradio-label checkbox-label" for="checkbox3">Item3</label>
+									</div>
+									<div class="checkboxradio-row">
+										<input class="checkboxradio-item checkboxradio-invisible" name="checkgroup" id="checkbox4" type="checkbox" />
+										<label class="checkboxradio-label checkbox-label" for="checkbox4">Item4</label>
+									</div>
+									<div class="checkboxradio-row">
+										<input class="checkboxradio-item checkboxradio-invisible" name="checkgroup" id="checkbox5" type="checkbox" />
+										<label class="checkboxradio-label checkbox-label" for="checkbox5">Item5</label>
+									</div>
+								</div>
+								<div class="form-row checkboxradio">
+									<div class="checkboxradio-row">
+										<input class="checkboxradio-item checkboxradio-invisible" name="radiogroup" id="radiobutton1" type="radio" />
+										<label class="checkboxradio-label radio-label" for="radiobutton1">Item1</label>
+									</div>
+									<div class="checkboxradio-row">
+										<input class="checkboxradio-item checkboxradio-invisible" name="radiogroup" id="radiobutton2" type="radio" />
+										<label class="checkboxradio-label radio-label" for="radiobutton2">Item2</label>
+									</div>
+									<div class="checkboxradio-row">
+										<input class="checkboxradio-item checkboxradio-invisible" name="radiogroup" id="radiobutton3" type="radio" />
+										<label class="checkboxradio-label radio-label" for="radiobutton3">Item3</label>
+									</div>
+									<div class="checkboxradio-row">
+										<input class="checkboxradio-item checkboxradio-invisible" name="radiogroup" id="radiobutton4" type="radio" />
+										<label class="checkboxradio-label radio-label" for="radiobutton4">Item4</label>
+									</div>
+								</div>
+								<div class="form-row">
+									<button class="button button-primary">Submit</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br />
+					<div class="accordion-row">
+						<div class="accordion-row-blk">
+							<h4>H4 Accordion 1</h4>
+							<div class="accordion-content">
+								<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. <a href="#">Lorem ipsum dolor </a>sit amet. consectetur adipiscing elit. sed do eiusmod tempor inc ididnut ut labore et dolore magna aliqua.</p> 
+							</div>
+						</div>
+						<div class="accordion-row-blk">
+							<h4>H4 Accordion 2</h4>
+							<div class="accordion-content">
+								<p> <a href="#">Lorem ipsum dolor </a>sit amet. consectetur adipiscing elit. sed do eiusmod tempor inc ididnut ut labore et dolore magna aliqua.Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</p>
+							</div>
+						</div>
+						<div class="accordion-row-blk">
+							<h4>H4 Accordion 3</h4>
+							<div class="accordion-content">
+								<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. <a href="#">Lorem ipsum dolor </a>sit amet. consectetur adipiscing elit. sed do eiusmod tempor inc ididnut ut labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+					</div>
+					<br />
+					<br />
+					<div class="row card-row">
+						<div class="col-4">
+							<figure>
+								<img src="img/hero-banner.jpg" alt="" />
+								<figcaption>
+									<span>Anim pariatur</span>
+									<h4>Anim pariatur cliche reprehenderit, enim eiusmod high life</h4>
+									<p> <a href="#">Lorem ipsum dolor </a>sit amet. consectetur adipiscing elit. sed do eiusmod tempor inc ididnut ut labore et dolore magna aliqua.Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</p>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="col-4">
+							<figure>
+								<img src="img/hero-banner.jpg" alt="" />
+								<figcaption>
+									<span>Anim pariatur</span>
+									<h4>Anim pariatur cliche reprehenderit, enim eiusmod high life</h4>
+									<p> <a href="#">Lorem ipsum dolor </a>sit amet. consectetur adipiscing elit. sed do eiusmod tempor inc ididnut ut labore et dolore magna aliqua.Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</p>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="col-4">
+							<figure>
+								<img src="img/hero-banner.jpg" alt="" />
+								<figcaption>
+									<span>Anim pariatur</span>
+									<h4>Anim pariatur cliche reprehenderit, enim eiusmod high life</h4>
+									<p> <a href="#">Lorem ipsum dolor </a>sit amet. consectetur adipiscing elit. sed do eiusmod tempor inc ididnut ut labore et dolore magna aliqua.Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</p>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="col-4">
+							<figure>
+								<img src="img/hero-banner.jpg" alt="" />
+								<figcaption>
+									<span>Anim pariatur</span>
+									<h4>Anim pariatur cliche reprehenderit, enim eiusmod high life</h4>
+									<p> <a href="#">Lorem ipsum dolor </a>sit amet. consectetur adipiscing elit. sed do eiusmod tempor inc ididnut ut labore et dolore magna aliqua.Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</p>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="col-4">
+							<figure>
+								<img src="img/hero-banner.jpg" alt="" />
+								<figcaption>
+									<span>Anim pariatur</span>
+									<h4>Anim pariatur cliche reprehenderit, enim eiusmod high life</h4>
+									<p> <a href="#">Lorem ipsum dolor </a>sit amet. consectetur adipiscing elit. sed do eiusmod tempor inc ididnut ut labore et dolore magna aliqua.Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</p>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="col-4">
+							<figure>
+								<img src="img/hero-banner.jpg" alt="" />
+								<figcaption>
+									<span>Anim pariatur</span>
+									<h4>Anim pariatur cliche reprehenderit, enim eiusmod high life</h4>
+									<p> <a href="#">Lorem ipsum dolor </a>sit amet. consectetur adipiscing elit. sed do eiusmod tempor inc ididnut ut labore et dolore magna aliqua.Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</p>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="cookie-policy">
+				<div class="container">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="#">Learn more</a></p>
+				</div>
+				<a href="#" class="button_cookk">I Agree <i class="fa fa-close"></i></a>
+			</div>
+		</div>
+	  	<script type="text/javascript" src="../src/js/lib/nprogress.min.js"></script>
+	  	<script type="text/javascript">
+	  		 NProgress.configure({ showSpinner: false }).start();
+		  	var jsArr = ['js/wow.js','js/app.js'];
+			for(var j = 0; j < jsArr.length; j++) {
+		        var script = document.createElement('script')
+		        script.setAttribute('type', 'text/javascript')
+		        script.setAttribute('src', jsArr[j])
+		        document.getElementsByTagName('head')[0].appendChild(script)
+		    }
+	    </script>
+	</body>
+</html>

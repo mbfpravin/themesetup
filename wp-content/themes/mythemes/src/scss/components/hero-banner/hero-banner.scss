@@ -1,0 +1,60 @@
+.hero-banner{
+	position: relative;
+
+	&-slider{
+		position: relative;
+	}
+
+	img{
+		height:700px;
+		object-fit: cover;
+    	object-position: center;
+		width:100%;
+	}
+
+	&-content{
+		max-width:500px;
+		>:last-child{
+			padding-bottom:0
+		}
+	}
+
+	&-desc-center, &-desc-bottom, &-desc-left, &-desc-right{
+		color:$white;
+		position: absolute;
+		width:100%;
+		z-index:99;
+		h1, h2{
+			color:$white;
+			padding-bottom:15px;
+		}
+	}
+	
+	&-desc-left, &-desc-right{
+		left:0;
+		top:50%;
+		@include transform(translateY(-50%));
+	}
+
+	&-desc-bottom{
+		left:0;
+		bottom:30px;
+	}
+
+	&-desc-right{
+		overflow: hidden;
+		.hero-banner-content{
+			float: right;
+		}
+	}
+
+	&-desc-center{
+		left:0;
+		top:50%;
+		@include transform(translateY(-50%));
+		.hero-banner-content{
+			text-align: center;
+			margin:0 auto;	
+		}
+	}
+}

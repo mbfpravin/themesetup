@@ -1,0 +1,50 @@
+.accordion-row{
+	border: {
+		bottom: 1px solid $border;
+	}	
+	&-blk{
+		h4{
+			border: {
+				top: 1px solid $border;
+	       }	
+			cursor: pointer;
+			font-family:$font-stack;
+			font-size: $font-sm;
+			line-height: 24px;	
+			position: relative;
+			padding: 18px 60px 18px 15px;
+			letter-spacing: 1px;
+			text-transform:uppercase;
+			&:after {
+				content: "\f107";	
+				color:$floating-fm-label;
+			 	font: {	
+			 		family:$font-awesome;
+		 			size: $font-md3;
+		 		}
+			 	position: absolute;
+			 	top:50%;
+			 	right: 15px;
+			 	line-height:40px;
+			 	@include width-height(40px, 40px);
+			 	text-align: center;
+			 	@include transition(transform 0.25s ease-out);
+			 	@include transform(translateY(-50%));
+			}
+	    &.active {
+		   border-color:$border;
+		   &:after {
+		   	@include transform(rotate(180deg) translateY(50%));
+		 }
+	   } 
+     }
+ 
+	.accordion-content{ 
+		display: none;
+		padding:0 15px 20px;
+		>:last-child{
+			padding-bottom: 0px;
+		}
+	  }
+	}
+}

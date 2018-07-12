@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>HTML Partten</title>
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800" rel="stylesheet">
+	<!-- modernizr included -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<style type="text/css">
+		body{
+			background-color: #fff;
+		}  
+		.render-blk{ opacity:0; }
+	</style>
+	<script type="text/javascript">
+		var cssArr = ['css/app.css'];
+		for(var i = 0; i < cssArr.length; i++) {
+			var link = document.createElement('link');
+			link.setAttribute('rel', 'stylesheet');
+			link.setAttribute('type', 'text/css');
+			link.setAttribute('href', cssArr[i]);
+			document.getElementsByTagName('head')[0].appendChild(link);
+		}
+	</script>
+	<noscript>
+		<style type="text/css" media="screen">
+			.render-blk{ opacity: 1; }	
+		</style>
+	</noscript>
+</head>
+	<body>
+		<div class="render-blk">
+			<header>
+				<div class="container">
+				<div class="menu-blk">	
+					<div class="row">
+						<div class="col-3">
+					    <a href="#" class="logo">
+						 logo
+					    </a>
+					  </div>
+					  <div class="col-9">
+					  	<nav class="sub-menu">
+							<ul>
+								<li>
+									<a href="#">ABOUT US</a>
+								</li>
+								<li>
+									<a href="#">MEET THE TEAM</a>
+								</li>
+								<li>
+									<a href="#">CONDITIONS WE SEE</a>
+								</li>
+								<li>
+									<a href="#">TREATMENT</a>
+								</li>
+								<li>
+									<a href="#">RESOURCES</a>
+								</li>
+								<li>
+									<a href="#">TESTIMONIALS</a>
+								</li>
+							</ul>
+							</nav>	
+						</div>		
+         </div>
+         </div>
+         <div class="social-icons">
+         	<ul>
+         		<li>
+         	    <a href="#">
+         		    <i class="fa fa-mail">HELP@CMHC.COM</i>
+            	</a>
+            </li>
+            <li>
+         	  	<a href="#">
+         		    <i class="fa fa-mail">HELP@CMHC.COM</i>
+         	    </a>
+         	  </li>
+         	  <li>
+         	  	<a href="#">
+         		   <i class="fa fa-mail">HELP@CMHC.COM</i>
+         	    </a>
+            </li>
+         	</ul>
+         </div>
+         </div>
+			</header>
+			<section class="hero-banner banner-slider">
+				<div class="hero-banner-slider">
+					<img src="img\hero-banner.jpg">
+					<div class="hero-banner-desc-left">
+						<div class="container">
+							<div class="hero-banner-content">					
+								<h2>Empowering you</h2>
+								<p>Lorum ipsum color sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrudlamco.</p>				
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="hero-banner-slider">
+					<img src="img\hero-banner.jpg">
+					<div class="hero-banner-desc-left">
+						<div class="container">
+							<div class="hero-banner-content">					
+								<h2>Empowering you</h2>
+								<p>Lorum ipsum color sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrudlamco.</p>				
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="hero-banner-slider">
+					<img src="img\hero-banner.jpg">
+					<div class="hero-banner-desc-left">
+						<div class="container">
+							<div class="hero-banner-content">					
+								<h2>Empowering you</h2>
+								<p>Lorum ipsum color sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrudlamco.</p>				
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				  <div class="button-section">
+				  	<div class="container">
+				    	<p>How can we help?</p>
+				    	<button class="button button-primary">
+				 		     CONDITIONS WE SEE
+				 			</button>
+				 			<button class="button button-primary">
+				 	  		MEET THE TEAM
+				 			</button>
+				 			<button class="button-secondary">
+				 				BOOK AN APPOINMENT
+				 			</button>
+				 	</div>	
+				</div>
+			</section>
+		</div>	
+		
+	  	<script type="text/javascript" src="../src/js/lib/nprogress.min.js"></script>
+	  	<script type="text/javascript">
+	  		 NProgress.configure({ showSpinner: false }).start();
+		  	var jsArr = ['js/wow.js','js/app.js'];
+			for(var j = 0; j < jsArr.length; j++) {
+		        var script = document.createElement('script')
+		        script.setAttribute('type', 'text/javascript')
+		        script.setAttribute('src', jsArr[j])
+		        document.getElementsByTagName('head')[0].appendChild(script)
+		    }
+	    </script>
+	</body>
+</html>

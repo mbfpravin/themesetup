@@ -1,0 +1,38 @@
+.cookie-policy{
+	border-top: 1px solid $border;
+	bottom: 0;
+	left:0;
+	position: fixed;
+	width: 100%;
+    padding: 10px 0;
+    background: rgba(255,255,255,1);
+	p{
+		padding-bottom: 0;
+		a{
+			white-space: nowrap;
+			border-bottom: 1px solid;
+		}
+	}
+	.button_cookk{
+		position: absolute;
+		top: 50%;
+		@include transform(translateY(-50%));
+		right: 20px;
+	}
+}
+
+@media screen and(max-width: 900px){
+	.cookie-policy{
+		p{
+			text-align: center;
+			padding-bottom: 10px;
+		}
+		.button_cookk{
+			display: block;
+			text-align: center;
+			position: relative;
+			right: 0;
+			@include transform(none);
+		}
+	}
+}

@@ -1,0 +1,101 @@
+ // Responsive Font-Size
+@mixin font-size($fs-map, $fs-breakpoints: $breakpoints) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      font-size: $fs-font-size;
+    }
+    @else {
+      // If $fs-font-size is a key that exists in
+      // $fs-breakpoints, use the value
+      @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+      @media screen and (min-width: $fs-breakpoint) {
+        font-size: $fs-font-size;
+      }
+    }
+  }
+}
+
+@mixin width-height($width, $height){
+  width:$width;
+  height:$height;
+}
+
+@mixin bg-positions($repeat:no-repeat, $align:left top) {
+  background-repeat:$repeat;
+  background-position:$align;
+}
+
+// Place holder
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}  
+}
+
+// Animation
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }  
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }  
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};      
+}
+
+@mixin text-shadow($left, $top, $radius, $color) {
+  text-shadow: $left $top $radius $color;
+  -webkit-text-shadow: $left $top $radius $color;
+  -moz-text-shadow: $left $top $radius $color;
+}
+
+@mixin box-shadow($left, $top, $radius, $color) {
+  box-shadow: $left $top $radius $color;
+  -webkit-box-shadow: $left $top $radius $color;
+  -moz-box-shadow: $left $top $radius $color;
+}
+
+@mixin transition-event($props:all, $duration:0.15s, $timing:linear) {
+  @include transition-property($props);
+  @include transition-duration($duration);
+  @include transition-timing-function($timing);
+}
+
+@include keyframes(checkbox-check) {
+  0% {
+      width: 0;
+      height: 0;
+      border-color: $white;
+      transform: translate3d(0, 0, 0) rotate(45deg);
+  }
+   33% {
+       width: 8px;
+       height: 0;
+       transform: translate3d(0, 0, 0) rotate(45deg);
+  }
+  100% {
+      width: 8px;
+      height: 12px;
+      border-color: $white;
+      transform: translate3d(0, -12px, 0) rotate(45deg);
+  }
+}

@@ -1,0 +1,38 @@
+.bread-crumb{
+	border:{
+		top:1px solid $border;
+		bottom:1px solid $border;
+	}
+	padding:5px 0;
+	li{
+		float: left;
+		font-size: 10px;
+    	letter-spacing: 2px;
+		margin:{
+			left:10px;
+			right:10px;
+		};
+		position: relative;
+		text-transform: uppercase;
+		&:first-child{
+			margin-left:0;
+			&:before{
+				display:none;
+			}
+		}
+		&:last-child{
+			margin-right:0;
+		}
+		&:before{
+			content:'/';
+			font-size:$font-md;
+			position: absolute;
+			left:-15px;
+			top:0;
+			opacity:0.4;
+		}
+	}
+	a{
+		color:$red;
+	}
+}

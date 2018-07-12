@@ -1,0 +1,82 @@
+h2{
+	color:blue;
+}
+header{
+	height: 141px;
+	background-color: white;
+	ul{
+		li{
+			display: inline-block;
+            padding: 21px;
+            margin: 27px 0px;
+            		a{
+		color: black;
+		font-size: 12px;
+	}
+		}
+	}
+}
+.nav{
+	sub-menu{
+		float: right;
+
+	}
+
+}
+.menu-blk{
+	overflow: hidden;
+	.logo{
+		float: left;
+	}
+}
+
+.empowering-slider{
+	.sliding-section{
+		position: relative;
+
+	}
+}
+.empower-content{
+    position: absolute;
+    top: 152px;
+    bottom: 0px;
+}
+.slick-dots {
+    padding: 40px 0px;
+    left: 50%;
+li{
+	background-color: #9fbfcc;
+	cursor: pointer;
+	display: inline-block;
+	list-style-type: none;
+	margin: 0 10px;
+	border-radius:100%;
+	width: 8px;
+	height:8px;
+&.slick-active {
+	background-color:#0f4d7e;
+}
+button {
+	border: none;
+	font-size: 0px;
+	display: none;
+     }
+   }
+}
+.slick-dots{
+	position: absolute;
+    top: 382px;
+    bottom: 0px;
+    margin-left: -593px
+}
+.button-section{
+	background-color: #eff8f7;
+button-primary{
+	font-size: 14px;
+}
+p{
+	display: inline-block;
+    padding: 43px 30px;
+}
+
+}
